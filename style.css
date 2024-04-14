@@ -14,6 +14,137 @@
   --container-color: #1a1a1a;
 }
 
+/* login */
+
+    /* login container */
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align the text */
+}
+
+    /* login form */
+.login-form {
+  text-align: center;
+}
+
+    /* form group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+    /* label */
+.form-group label {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  text-align: left; /* Align labels to the left */
+}
+
+    /* input field */
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+    /* login button */
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #088178;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+    /* login button hover */
+.login-form button:hover {
+  background-color: #065a4f;
+}
+
+    /* responsive styles */
+@media (max-width: 768px) {
+  .login-container {
+      width: 90%;
+  }
+}
+
+/* signup */
+
+/* signup container */
+.signup-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align the text */
+}
+
+/* signup form */
+.signup-form {
+  text-align: center;
+}
+
+/* form group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* label */
+.form-group label {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  text-align: left; /* Align labels to the left */
+}
+
+/* input field */
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Signup Button */
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #088178;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Signup Button Hover */
+.signup-form button:hover {
+  background-color: #065a4f;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .signup-container {
+      width: 90%;
+  }
+}
+
+
 html {
   scroll-behavior: smooth;
 }
