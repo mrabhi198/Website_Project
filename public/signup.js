@@ -28,6 +28,16 @@ signUpForm.addEventListener("submit", async function (event) {
   }
 });
 
+// google
+function onGoogleSignUp(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  var username = profile.getName();
+  var email = profile.getEmail();
+  // Send username and email to your server for sign-up
+  // Example: You can use AJAX to send data to your server
+  console.log(username, email);
+}
+
 // loginForm.addEventListener("submit", async function (event) {
 //   event.preventDefault();
 

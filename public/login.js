@@ -26,4 +26,14 @@ loginForm.addEventListener("submit", async function (event) {
     } catch (err) {
       console.log(err);
     }
-  });
+});
+
+  // google
+function onGoogleLogin(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    var username = profile.getName();
+    var email = profile.getEmail();
+    // Send username and email to your server for authentication
+    // Example: You can use AJAX to send data to your server
+    console.log(username, email);
+}

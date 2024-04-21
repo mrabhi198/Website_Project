@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SignUp</title>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+
     <!-- Link to your CSS file -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -32,6 +36,7 @@
     <section class="section-p1">
       <div class="signup-container">
         <h2>Sign Up</h2>
+        <br>
         <form
           action="http://127.0.0.1:5000/signup"
           method="POST"
@@ -51,6 +56,13 @@
           </div>
           <button type="submit">Sign Up</button>
         </form>
+        <p>Or</p>
+
+        <!-- google button -->
+        <div class="google-signup">
+          <div class="g-signin2" data-onsuccess="onGoogleSignUp" data-width="200" data-height="40" data-longtitle="true"></div>
+        </div>
+
       </div>
     </section>
 
