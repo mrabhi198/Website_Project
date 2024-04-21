@@ -1,1 +1,2 @@
-// Script for navigation bar
+//side navbar
+const bar = document.getElementsByClassName('bar')

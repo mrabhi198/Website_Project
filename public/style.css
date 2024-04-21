@@ -274,19 +274,19 @@ body {
   left: 0;
 }
 
-#navbar {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#navbar li {
+.navbar li {
   list-style: none;
   padding: 0 20px;
   position: relative;
 }
 
-#navbar li a {
+.navbar li a {
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
@@ -294,13 +294,13 @@ body {
   transition: 0.3s ease;
 }
 
-#navbar li a:hover,
-#navbar li a.active {
+.navbar li a:hover,
+.navbar li a.active {
   color: var(--text-color);
 }
 
-#navbar li a.active::after,
-#navbar li a:hover::after {
+.navbar li a.active::after,
+.navbar li a:hover::after {
   content: "";
   width: 30%;
   height: 2px;
@@ -310,9 +310,14 @@ body {
   left: 20%;
 }
 
+.mobile {
+  display: none;
+  align-items: center;
+}
+
 /* home page */
 .hero {
-  background-image: url("img/hero1.png");
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixXYzHcWOkEvp4qSaX9hYiczA1Xt3i8vS7gZdy3pAJHY3W3TtHyVAq89AiCnRQCzHHIsTmA0nvVkEi60pmGJRWKI_P_WUSk6fR5_L1DbKpLNlSBGbFCD8Udnc7EbUP8wpti7df9yGJbidSMBi_OMFc7K0ygPTQE6aK4vWCFnK6sweWxLWF9d9jgdUTq95Z/s1903/hero1.png");
   height: 90vh;
   width: 100%;
   background-size: cover;
@@ -333,7 +338,7 @@ body {
 }
 
 .hero button {
-  background-image: url("img/button.png");
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDuYXkO-fSUTJkgwGuIFAUvTa_z4SuyBOCpSsBfxYXtrE3HXvAEfDqbfYgHyS1pHAQPFuDE_ArMjwIATtJIv3_xrjfYmijnf2T34EsFE6TKITJowa3GuoCbObh8tnlVPD6OMiDG7q_g8Bg7MEgn8MABbUrrFU3UFUP7QcfB-A78m5QJc3ILinENRiWQaGx/s227/button.png");
   background-color: transparent;
   color: var(--text-color);
   border: 0;
@@ -723,4 +728,37 @@ footer a:hover {
 footer .copyright {
   width: 100%;
   text-align: center;
+}
+
+/* media query for making websote responsive */
+@media (max-width:799px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #e3e6f3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+  }
+
+  .navbar li {
+    margin-bottom: 25px;
+  }
+
+  .mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile i {
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+  }
 }
